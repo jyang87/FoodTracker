@@ -78,8 +78,18 @@ class ViewController: UIViewController,UITextFieldDelegate,UIImagePickerControll
         present(imagePickerController, animated: true, completion: nil)
     }
     
-    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+    @IBAction func getDateFromLabel(_ sender: UITapGestureRecognizer) {
+        nameTextField.resignFirstResponder()
         
+        let nowDate = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let dateString = formatter.string(from: nowDate)
+        
+        date.text = dateString
+    }
+    @IBAction func setDefaultLabelText(_ sender: UIButton) {
+    
         let nowDate = Date()
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
