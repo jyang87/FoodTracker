@@ -63,10 +63,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OQD-4z-9Ju">
-                                <rect key="frame" x="16" y="583" width="343" height="20.5"/>
+                                <rect key="frame" x="16" y="622" width="343" height="36.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tj0-PI-4MH">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36.5"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -77,19 +77,22 @@
                                     <outletCollection property="gestureRecognizers" destination="vQa-Jr-JEt" appends="YES" id="JxP-GQ-vnT"/>
                                 </connections>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="boA-Uo-Lum" customClass="RatingControl" customModule="Food_Tracker" customModuleProvider="target">
+                                <rect key="frame" x="16" y="570" width="252" height="44"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eTc-LS-xVa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="14d-2c-BIW"/>
                             <constraint firstItem="eTc-LS-xVa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="2mT-tx-efC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="OQD-4z-9Ju" secondAttribute="trailing" id="BPA-2b-FxV"/>
-                            <constraint firstItem="OQD-4z-9Ju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Dch-Pa-2fd"/>
-                            <constraint firstItem="eTc-LS-xVa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EpP-Ca-ZQ2"/>
-                            <constraint firstItem="OQD-4z-9Ju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GQY-Rr-5Rm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eTc-LS-xVa" secondAttribute="trailing" id="MAB-Mq-BiF"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OQD-4z-9Ju" secondAttribute="bottom" constant="63.5" id="azy-vu-2VK"/>
-                            <constraint firstItem="OQD-4z-9Ju" firstAttribute="top" secondItem="eTc-LS-xVa" secondAttribute="bottom" constant="38.5" id="khb-nz-hQ0"/>
-                            <constraint firstItem="OQD-4z-9Ju" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xne-vy-PyW"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="OQD-4z-9Ju" secondAttribute="bottom" constant="8.5" id="5kH-Hh-DAw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="boA-Uo-Lum" secondAttribute="bottom" constant="53" id="B28-rP-B1C"/>
+                            <constraint firstItem="OQD-4z-9Ju" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DY7-3z-tx5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OQD-4z-9Ju" secondAttribute="trailing" id="EEc-hb-aFY"/>
+                            <constraint firstItem="boA-Uo-Lum" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EOG-lh-4Xz"/>
+                            <constraint firstItem="eTc-LS-xVa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hds-hd-iea"/>
+                            <constraint firstItem="boA-Uo-Lum" firstAttribute="top" secondItem="eTc-LS-xVa" secondAttribute="bottom" constant="25.5" id="nzO-jw-O1T"/>
+                            <constraint firstItem="OQD-4z-9Ju" firstAttribute="top" secondItem="boA-Uo-Lum" secondAttribute="bottom" constant="8" id="xiQ-GI-s6L"/>
                         </constraints>
                     </view>
                     <connections>
